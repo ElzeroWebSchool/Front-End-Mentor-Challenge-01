@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 70px;
 }
 @media (max-width: 575px) {
   .content {
