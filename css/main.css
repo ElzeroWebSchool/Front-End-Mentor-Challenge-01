@@ -1,0 +1,119 @@
+:root {
+  --main-font-size: 2.3rem;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.page {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 75px;
+}
+/* Start Head Area */
+.head {
+  text-align: center;
+}
+.head p:first-child {
+  font-size: var(--main-font-size);
+  font-weight: 200;
+  margin: 0;
+  color: hsl(234, 12%, 34%);
+}
+@media (max-width: 575px) {
+  .head p:first-child {
+    font-size: 24px;
+  }
+}
+.head p:nth-child(2) {
+  font-size: var(--main-font-size);
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: hsl(234, 12%, 34%);
+}
+@media (max-width: 575px) {
+  .head p:nth-child(2) {
+    font-size: 24px;
+  }
+}
+.head p:last-child {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 0;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  line-height: 1.6;
+}
+/* End Head Area */
+/* Start Content Area */
+.content {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+@media (max-width: 575px) {
+  .content {
+    flex-direction: column;
+  }
+}
+.content .card-holder {
+  flex: 1;
+}
+@media (min-width: 576px) {
+  .content .card-holder {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1;
+  }
+}
+.content .card-holder .card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-top: 4px solid transparent;
+  -webkit-box-shadow: 2px 8px 14px 0 hsla(229, 6%, 66%, 0.6);
+  -moz-box-shadow: 2px 8px 14px 0 hsla(229, 6%, 66%, 0.6);
+  box-shadow: 2px 8px 14px 0 hsla(229, 6%, 66%, 0.6);
+}
+.content .card-holder .card h3 {
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+.content .card-holder .card p {
+  line-height: 1.7;
+  color: hsl(229, 6%, 66%);
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+.content .card-holder .card img {
+  display: block;
+  margin-left: auto;
+}
+.content .card-holder .super {
+  border-top-color: hsl(180, 62%, 55%);
+}
+.content .card-holder .team {
+  border-top-color: hsl(0, 78%, 62%);
+}
+.content .card-holder .karma {
+  border-top-color: hsl(34, 97%, 64%);
+}
+.content .card-holder .calculator {
+  border-top-color: hsl(212, 86%, 64%);
+}
+/* End Content Area */
